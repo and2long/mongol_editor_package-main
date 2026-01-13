@@ -1,0 +1,211 @@
+name: mongol_editor
+description: A comprehensive Mongolian script editor with custom keyboard, ML-powered autocomplete, and rich text editing features.
+version: 1.0.0
+homepage: https://github.com/yourusername/mongol_editor
+
+environment:
+  sdk: ^3.10.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core dependencies
+  mongol: ^9.0.0
+  get: ^4.6.6
+  flutter_screenutil: ^5.9.3
+  shared_preferences: ^2.5.3
+  emoji_picker_flutter: ^4.4.0
+
+  # Machine Learning
+  pytorch_mobile:
+    git:
+      url: https://github.com/zmongol/pytorch_mobile_clone.git
+
+publish_to: none
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/machine_learning/zmodel.pt
+    - assets/machine_learning/new_char_to_token.json
+
+  # Fonts
+  fonts:
+    - family: z52haratig
+      fonts:
+        - asset: assets/fonts/z52haratig.ttf
+    - family: z52amglangtig
+      fonts:
+        - asset: assets/fonts/z52amgolangtig.ttf
+    - family: z52buduntig
+      fonts:
+        - asset: assets/fonts/z52buduntig.ttf
+    - family: z52chimegtig
+      fonts:
+        - asset: assets/fonts/z52chimegtig.ttf
+    - family: z52egulentig
+      fonts:
+        - asset: assets/fonts/z52egulentig.ttf
+    - family: z52hawangtig
+      fonts:
+        - asset: assets/fonts/z52hawangtig.ttf
+    - family: z52holsnujugtig
+      fonts:
+        - asset: assets/fonts/z52holsnujugtig.ttf
+    - family: z52horqtsagaantig
+      fonts:
+        - asset: assets/fonts/z52horqtsagaantig.ttf
+    - family: z52munggunujugtig
+      fonts:
+        - asset: assets/fonts/z52munggunujugtig.ttf
+    - family: z52ononsansseriftig
+      fonts:
+        - asset: assets/fonts/z52ononsansseriftig.ttf
+    - family: z52ordostig
+      fonts:
+        - asset: assets/fonts/z52ordostig.ttf
+    - family: z52qimedtig
+      fonts:
+        - asset: assets/fonts/z52qimedtig.ttf
+    - family: z52qingmingtig
+      fonts:
+        - asset: assets/fonts/z52qingmingtig.ttf
+    - family: z52saitig
+      fonts:
+        - asset: assets/fonts/z52sayatig.ttf
+    - family: z52sanstig
+      fonts:
+        - asset: assets/fonts/z52sanstig.ttf
+    - family: z52sanstigbold
+      fonts:
+        - asset: assets/fonts/z52sanstigbold.ttf
+    - family: z52solibotig
+      fonts:
+        - asset: assets/fonts/z52solbigotig.ttf
+    - family: z52sonintig
+      fonts:
+        - asset: assets/fonts/z52sonintig.ttf
+    - family: z52togtig
+      fonts:
+        - asset: assets/fonts/z52togtig.ttf
+    - family: z52tsagaantig
+      fonts:
+        - asset: assets/fonts/z52tsagaantig.ttf
+    - family: z52uljitig
+      fonts:
+        - asset: assets/fonts/z52uljitig.ttf
+    - family: z52erihetig
+      fonts:
+        - asset: assets/fonts/z52erihetig.ttf
+    - family: z52galttig
+      fonts:
+        - asset: assets/fonts/z52galttig.ttf
+    - family: z52modonbartig
+      fonts:
+        - asset: assets/fonts/z52modonbartig.ttf
+    - family: z52sidemtig
+      fonts:
+        - asset: assets/fonts/z52sidemtig.ttf
+    - family: z52togoraitig
+      fonts:
+        - asset: assets/fonts/z52togoraitig.ttf
+    - family: z52oyanggatig
+      fonts:
+        - asset: assets/fonts/z52oyanggatig.ttf
+    - family: z52holosontig
+      fonts:
+        - asset: assets/fonts/z52holosontig.ttf
+    - family: z52garcagtig
+      fonts:
+        - asset: assets/fonts/z52garcagtig.ttf
+    - family: z52tegustig
+      fonts:
+        - asset: assets/fonts/z52tegustig.ttf
+    - family: z52durugetig
+      fonts:
+        - asset: assets/fonts/z52durugetig.ttf
+    - family: z52hosigatig
+      fonts:
+        - asset: assets/fonts/z52hosigatig.ttf
+    - family: z52lundbtig
+      fonts:
+        - asset: assets/fonts/z52lundbtig.ttf
+    - family: z52sogonagtig
+      fonts:
+        - asset: assets/fonts/z52sogonagtig.ttf
+    - family: z52teniguntig
+      fonts:
+        - asset: assets/fonts/z52teniguntig.ttf
+    - family: z52ujugtig
+      fonts:
+        - asset: assets/fonts/z52ujugtig.ttf
+    - family: z52xanadutig
+      fonts:
+        - asset: assets/fonts/z52xanadutig.ttf
+    - family: z52oigorjintig
+      fonts:
+        - asset: assets/fonts/z52oigorjintig.ttf
+    - family: z52sodortig
+      fonts:
+        - asset: assets/fonts/z52sodortig.ttf
+    - family: z52tatalgatig
+      fonts:
+        - asset: assets/fonts/z52tatalgatig.ttf
+    - family: z52agolatig
+      fonts:
+        - asset: assets/fonts/z52agolatig.ttf
+    - family: z52daicintig
+      fonts:
+        - asset: assets/fonts/z52daicintig.ttf
+    - family: z52tubtiintig
+      fonts:
+        - asset: assets/fonts/z52tubtiintig.ttf
+    - family: z52dardastig
+      fonts:
+        - asset: assets/fonts/z52dardastig.ttf
+    - family: z52dashtsedentig
+      fonts:
+        - asset: assets/fonts/z52dashtsedentig.ttf
+    - family: z52boldbirtig
+      fonts:
+        - asset: assets/fonts/z52boldbirtig.ttf
+    - family: z52gorbannirootig
+      fonts:
+        - asset: assets/fonts/z52gorbannirootig.ttf
+    - family: z52biligtig
+      fonts:
+        - asset: assets/fonts/z52biligtig.ttf
+    - family: z52khalhtig
+      fonts:
+        - asset: assets/fonts/z52khalhtig.ttf
+    - family: z52tatalgantig
+      fonts:
+        - asset: assets/fonts/z52tatalgantig.ttf
+    - family: z52tolitig
+      fonts:
+        - asset: assets/fonts/z52tolitig.ttf
+    - family: z52enkiragotig
+      fonts:
+        - asset: assets/fonts/z52enkiragotig.ttf
+    - family: z52seilmeltig
+      fonts:
+        - asset: assets/fonts/z52seilmeltig.ttf
+    - family: z52brahmisanstig
+      fonts:
+        - asset: assets/fonts/z52brahmisanstig.ttf
+    - family: Z52HaraTigMirror
+      fonts:
+        - asset: assets/fonts/z52HaraTigMirror1.ttf
+    - family: segoeui
+      fonts:
+        - asset: assets/fonts/segoeui.ttf
+        - asset: assets/fonts/seguisb.ttf
+        - asset: assets/fonts/segoeuib.ttf
