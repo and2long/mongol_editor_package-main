@@ -20,7 +20,7 @@ dependencies:
   # Machine Learning
   pytorch_mobile:
     git:
-      url: https://github.com/zmongol/pytorch_mobile_clone.git
+      url: https://github.com/and2long/pytorch_mobile_clone.git
 
 publish_to: none
 
